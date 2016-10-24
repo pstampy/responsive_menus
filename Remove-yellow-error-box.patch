@@ -1,0 +1,13 @@
+diff --git a/responsive_menus.module b/responsive_menus.module
+index fcdeec4..272ac1e 100644
+--- a/responsive_menus.module
++++ b/responsive_menus.module
+@@ -334,7 +334,7 @@ function responsive_menus_style_load($style, $jq_update_ignore) {
+         }
+       }
+       else {
+-        drupal_set_message(t('@style style requires !link library version !version or higher, but you have opted to provide your own library.  Please ensure you have the proper version of jQuery included.  (note: this is not an error)', array('@style' => $style_info['name'], '!link' => l(t('jQuery'), 'http://jquery.com'), '!version' => $style_info['jquery_version'])), 'warning');
++        drupal_set_message(t(')', array('@style' => $style_info['name'], '!link' => l(t('jQuery'), 'http://jquery.com'), '!version' => $style_info['jquery_version'])), 'warning');
+       }
+     }
+     // For integration with Libraries.
